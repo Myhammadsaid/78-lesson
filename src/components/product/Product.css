@@ -2,10 +2,6 @@
   margin-bottom: 50px;
 }
 
-.product-title {
-  text-align: center;
-}
-
 .product-cards {
   display: flex;
   align-items: center;
@@ -23,4 +19,10 @@
 
 .product-card img {
   border-radius: 10px;
+}
+
+.product-card button {
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
 }

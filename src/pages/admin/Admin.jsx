@@ -8,7 +8,7 @@ const Admin = () => {
   const [close, setClose] = useState(false);
   return (
     <>
-      <div className={`admin ${close ? "close" : ""}`}>
+      <div className={`admin container ${close ? "close" : ""}`}>
         <Sidebar />
         <div>
           <AdminHeader setClose={setClose} />

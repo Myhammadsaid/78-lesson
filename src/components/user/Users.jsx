@@ -26,7 +26,6 @@ const Users = () => {
     <div>
       <section className="user">
         <div className="container">
-          <h1 className="user-title">User</h1>
           <div className="user-cards">
             {isLoading ? <h2>Loading...</h2> : user}
           </div>

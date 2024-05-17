@@ -26,7 +26,6 @@ const Product = ({ products, isAdmin }) => {
     <div>
       <section className="product">
         <div className="container">
-          <h1 className="product-title">Product</h1>
           <div className="product-cards">{product}</div>
         </div>
       </section>

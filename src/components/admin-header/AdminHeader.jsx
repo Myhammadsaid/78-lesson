@@ -3,7 +3,7 @@ import React from "react";
 
 const AdminHeader = ({ setClose }) => {
   return (
-    <div className="admin__header container">
+    <div className="admin__header">
       <button onClick={() => setClose((p) => !p)}>
         <img src={menu} alt="menu" />
       </button>

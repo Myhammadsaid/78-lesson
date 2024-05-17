@@ -1,11 +1,6 @@
 .user {
   margin-bottom: 50px;
 }
-
-.user-title {
-  text-align: center;
-}
-
 .user-cards {
   display: flex;
   align-items: center;

@@ -1,0 +1,33 @@
+footer {
+  padding: 50px 0;
+  background: #edf2f4;
+}
+
+.footer-style {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+}
+
+.footer-link {
+  max-width: 186px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.footer-title {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+}

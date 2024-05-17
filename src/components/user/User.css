@@ -1,0 +1,26 @@
+.user {
+  margin-bottom: 50px;
+}
+
+.user-title {
+  text-align: center;
+}
+
+.user-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.user-card {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 20px;
+  gap: 10px;
+}
+
+.user-card img {
+  border-radius: 10px;
+}

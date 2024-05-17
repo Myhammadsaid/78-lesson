@@ -1,0 +1,16 @@
+form {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+  max-width: 300px;
+}
+
+input {
+  padding: 10px;
+  outline: none;
+}
+
+.user-btn {
+  width: 150px;
+  height: 30px;
+}

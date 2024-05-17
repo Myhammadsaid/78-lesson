@@ -7,7 +7,7 @@ const Home = () => {
   let { data, error, isError, isLoading, isSuccess } = useGetProductsQuery();
 
   return (
-    <div className="container">
+    <div>
       {isLoading ? (
         <h2>Loading...</h2>
       ) : (

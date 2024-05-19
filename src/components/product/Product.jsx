@@ -1,25 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Product.css";
 import { useDeleteProductMutation } from "../../context/api/productsApi";
+import EditModul from "../edit-modul/EditModul";
 
 const Product = ({ products, isAdmin }) => {
-  let [deleteProduct, { isLoading }] = useDeleteProductMutation();
+  const [editProduct, setEditUser] = useState(null);
 
-  const handleDeleteProduct = (id) => {
-    deleteProduct(id);
-  };
+  let [deleteProduct, { isLoading }] = useDeleteProductMutation();
 
   let product = products?.map((val) => (
     <div className="product-card" key={val.id}>
       <img src={val.img} alt="img" />
-      <h3>{val.name}</h3>
-      <h3>{val.fname}</h3>
-      <p>Age: {val.age}</p>
-      {isAdmin ? (
-        <button onClick={() => handleDeleteProduct(val.id)}>Delete</button>
-      ) : (
-        <></>
-      )}
+      <div className="product-box">
+        <h3>
+          {val.name} {val.fname}
+        </h3>
+        <p>Age: {val.age}</p>
+        {isAdmin ? (
+          <div className="product-btns">
+            <button onClick={() => deleteProduct(val.id)}>Delete</button>
+            <button onClick={() => setEditUser(val)}>Edit</button>
+          </div>
+        ) : (
+          <></>
+        )}
+      </div>
     </div>
   ));
   return (
@@ -29,6 +34,11 @@ const Product = ({ products, isAdmin }) => {
           <div className="product-cards">{product}</div>
         </div>
       </section>
+      {editProduct ? (
+        <EditModul data={editProduct} setData={setEditUser} />
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

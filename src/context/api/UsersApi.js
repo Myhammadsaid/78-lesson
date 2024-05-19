@@ -19,11 +19,11 @@ export const userApi = api.injectEndpoints({
       }),
       invalidatesTags: ["User"],
     }),
-    // Patch request
+    // Put request
     updateUser: build.mutation({
-      query: ({ _id, body }) => ({
-        url: `/users/:${_id}`,
-        method: "PATCH",
+      query: ({ id, body }) => ({
+        url: `/users/${id}`,
+        method: "PUT",
         body,
       }),
       invalidatesTags: ["User"],

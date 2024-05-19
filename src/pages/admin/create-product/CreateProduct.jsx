@@ -13,7 +13,7 @@ const CreateProduct = () => {
   const handleCreateUser = (e) => {
     e.preventDefault();
     createProduct(newProduct);
-    console.log(newProduct);
+    setNewProduct(initialState);
   };
   return (
     <div className="container">

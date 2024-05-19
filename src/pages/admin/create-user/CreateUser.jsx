@@ -15,6 +15,7 @@ const CreateUser = () => {
   const handleCreateUser = (e) => {
     e.preventDefault();
     CreateUser(newUser);
+    setNewUser(initialState);
   };
   return (
     <div className="container">
